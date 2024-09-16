@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+    padding: 20px;
+}
+
+input{
+    outline: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 17px 20px;
+    min-width: 300px;
+}
+
+.keep-left{
+    justify-content: flex-start;
+}
+
+.keep-right{
+    justify-content: flex-end;
+}
+
+.keep-center{
+    justify-content: center;
+    color: green;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.message-line{
+    display: flex;
+    width: 99vw;
+}
+
+.greenClass{
+    color: green;
+}
+
+.redClass{
+    color: red;
+}
+
+.message-content{
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    max-width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.message-username{
+    font-size: 11px;
+    text-align: end;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+}
+
+.message-text{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word; /* Ensures long words break and wrap to the next line */
+    word-break: break-word; /* Ensures long words break and wrap to the next line */
+}
+
+button{
+    outline: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: border 0.3s ease-out;
+}
+
+button:hover {
+    border: 3px solid lightblue;
+    transition: border 0.3s ease-out;
+}
+
+#message-container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    max-height:90%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    padding-bottom: 50px;
+}
+
+#message-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+#disconnect-button{
+    display: hidden;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1;
+}
+
+#send-container{
+    border-top: 1px solid #dbdbdb;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.show{
+    display: block;
+}
